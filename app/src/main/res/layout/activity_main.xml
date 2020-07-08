@@ -26,6 +26,7 @@
         android:layout_height="85dp"
         android:ems="10"
         android:hint=""
+        android:maxLength="4" 
         android:textSize="30sp"
         android:textColor="#A5A5A5"
         android:inputType="number" />
