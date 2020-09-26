@@ -31,21 +31,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(time.isEmpty)
                 {
-Toast.makeText(this, "Please Enter The Time", Toast.LENGTH_SHORT).show();
-    return;
+                    //let user know that the value is empty
+                    Toast.makeText(this, "Please Enter The Time", Toast.LENGTH_SHORT).show();
+                    return;
                 }
                 else
                   {
-                   timevalue = Integer.parseInt(time.getText().toString());
+                    //get the input from user and phase it to timevalue
+                    timevalue = Integer.parseInt(time.getText().toString());
+                    
+                    //do math
                     password = Math.pow(9999 - timevalue, 2);
+                    
+                    //output
                     result.setText(String.format("%.0f", password));
                   }
-            }
-        });{
-
+            }});{
         }
-
-
     }
 
 }
